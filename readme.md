@@ -54,15 +54,19 @@ GOOS=linux GOARCH=amd64 go build -o rootfinder.linux main.go
 Upload the compiled binary (rootfinder.linux) to the target machine.
 
 ### Make executable
+```js
 chmod +x ./rootfinder.linux
+```
 
 ### Run and save report
 ```js
 ./rootfinder.linux > report.txt
 ```
 
-# Or run a specific check (Future Feature)
-# ./rootfinder.linux --check sudo
+### Or run a specific check (Future Feature)
+```js
+./rootfinder.linux --check sudo
+```
 
 
 Future Scope (v1.0+)
